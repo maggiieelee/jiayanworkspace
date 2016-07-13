@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!--HTML5 doctype-->
+<html>
+
+<head>
+
+    <title>Fibber</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" type="text/css" href="build/icons.css" />
+
+    <link rel="stylesheet" type="text/css" href="build/af.ui.css" />
+
+     <script type="text/javascript" charset="utf-8" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://rawgit.com/ftlabs/fastclick/master/lib/fastclick.js"></script>
+    <script type="text/javascript" charset="utf-8" src="src/af.shim.js"></script>
+    <script type="text/javascript" charset="utf-8" src="src/af.ui.js"></script>
+
+    <script type="text/javascript" src="src/fibber.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="build/fibber.css"/>
+
+    <script src="src/af.desktopBrowsers.js"></script>
+    <script type="text/javascript" charset="utf-8" src="src/af.actionsheet.js"></script>
+    <script type="text/javascript" charset="utf-8" src="src/af.animation.js"></script>
+    <script type="text/javascript" charset="utf-8" src="src/af.touchEvents.js"></script>
+    <script type="text/javascript" charset="utf-8" src="src/af.popup.js"></script>
+    <script type="text/javascript" charset="utf-8" src="src/af.drawer.js"></script>
+    <script type="text/javascript" charset="utf-8" src="src/af.toast.js"></script>
+    <script type="text/javascript" charset="utf-8" src="src/af.animateheader.js"></script>
+    <script type="text/javascript" charset="utf-8" src="src/af.splashscreen.js"></script>
+    <script type="text/javascript" charset="utf-8" src="src/af.swipereveal.js"></script>
+    <script type="text/javascript" charset="utf-8" src="src/af.lockscreen.js"></script>
+
+
+
+    <script>
+
+        $(document).ready(function(){
+            fibber.init();
+        });
+
+    </script>
+
+
+</head>
+
+<body >
+    <div id="splashscreen" class='ui-loader heavy'>
+        Fibber
+        <br>
+        <br>
+        <span class='ui-icon ui-icon-loading spin'></span>
+        <h1>Starting app</h1>
+
+    </div>
+    <div class="view" id="mainview">
+
+        <div class="pages">
+            <div class="panel" id="instructions">
+                <h1>Fibber</h1><br>
+                <h2>How to Play</h2>
+                <div id="instruction">1. Read statement<br>
+                2. Decide if it’s a truth or a fib<br>
+                3. First person naked loses. </div>
+
+                <a href="#viewstatement" id="startbtn" class="button">START</a>
+
+            </div>
+            
+            <div class="panel" id="viewstatement">
+
+               <div class="sidebtn" id="sidebtnUp"></div>
+
+               <div class="sidebtn" id="sidebtnDown"></div>
+
+               <div class="topText">Hillary Cliton says market forces made coal companies go bankrupt</div>
+
+               <div id="HC" class="bigCircle">HC</div>
+
+               <div class="speakTri"></div>
+
+               <div class="speakBox">
+               	
+               	<p class="speech">"The market is making this decision. The market has driven down the cost of coal, so you have companies going bankrupt."</p>
+
+               	<p class="speechSource"> - an interview with CNN's Anderson Cooper</p>
+
+               </div>
+
+               <div id="candidateHC">hillary clinton</div>
+
+               <div class="smallCircle" id="rightOne"></div>
+
+               <div class="smallCircle" id="rightTwo"></div>
+
+               <div class="smallCircle" id="rightThree"></div>
+
+               <div class="smallCircle" id="rightFour"></div>
+
+               <div class="smallCircle" id="rightFive"></div>
+
+               <div class="smallCircle" id="leftOne"></div>
+
+               <div class="smallCircle" id="leftTwo"></div>
+
+               <div class="smallCircle" id="leftThree"></div>
+
+               <div class="smallCircle" id="leftFour"></div>
+
+               <div class="smallCircle" id="leftFive"></div>
+
+               <div id="DT" class="bigCircle">DT</div>
+
+               <div id="candidateDT">donald trump</div>
+
+               <div class="middleCircle" id="circleOne"></div>
+
+               <div class="middleCircle" id="circleTwo"></div>
+
+               <div class="middleCircle" id="circleThree"></div>
+
+               <div class="middleCircle" id="circleFour"></div>
+
+               <div class="middleCircle" id="circleFive"></div>
+
+               <div id="truth">TRUTH</div>
+
+               <div id="FIB">FIB</div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
